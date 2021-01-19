@@ -33,6 +33,37 @@ ol, ul {
     padding: 0;
 }
 
+.button { 
+    color: #21f34f; 
+    position: relative; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-size: 24px; 
+    letter-spacing: 4px; 
+    font-family: sans-serif; 
+    padding: 15px 30px; 
+    overflow: hidden; 
+    display: inline-block; 
+    transition: 0.2s;} 
+    
+    .button__line { 
+    position: absolute; 
+    display: block;} 
+    
+    .button__line_top { 
+    top: 0; 
+    left: -100%; 
+    width: 100%; 
+    height: 2px; 
+    background: linear-gradient(90deg,transparent,#21f34f);
+    } .button:hover 
+    
+    .button__line_top { 
+    left: 100%; 
+    transition: 1s; 
+    transition-delay: 0.25s;} 
+    
+    .button__line_bottom { bottom: 0; right: -100%; width: 100%; height: 2px; background: linear-gradient(270deg,transparent,#21f34f);} .button:hover .button__line_bottom { right: 100%; transition: 1s; transition-delay: 0.25s;} .button__line_left { bottom: -100%; left: 0; width: 2px; height: 100%; background: linear-gradient(0deg,transparent,#21f34f);} .button:hover .button__line_left { bottom: 100%; transition: 1s; transition-delay: 0s;} .button__line_right { top: -100%; right: 0; width: 2px; height: 100%; background: linear-gradient(180deg,transparent,#21f34f);} .button:hover .button__line_right { top: 100%; transition: 1s; transition-delay: 0s;} .button:hover { box-shadow: 0 0 10px #21f34f,0 0 40px #21f34f,0 0 80px #21f34f; color: #000; background-color: #21f34f; transition-delay: 0.7s; }
 
 .btn {
 	box-shadow: 0 12px 19px rgba(0, 0, 0, 0.1) inset, 0 1px 7px rgba(255, 255, 255, 0.2);
